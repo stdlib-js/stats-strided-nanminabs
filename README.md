@@ -48,13 +48,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-strided-nanminabs/tags). For example,
+
+```javascript
 import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@v0.1.0-deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@deno/mod.js';
 ```
 
 #### nanminabs( N, x, strideX )
@@ -147,7 +152,7 @@ var v = nanminabs.ndarray( 5, x, 2, 1 );
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-uniform@deno/mod.js';
 import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
 import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@deno/mod.js';
-import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@v0.1.0-deno/mod.js';
+import nanminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-nanminabs@deno/mod.js';
 
 function rand() {
     if ( bernoulli( 0.8 ) < 1 ) {
